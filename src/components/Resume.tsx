@@ -6,7 +6,7 @@ const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/resume.pdf';
-    link.download = 'Pushpak_Jaiswal_Resume.pdf';
+    link.download = 'resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -35,10 +35,6 @@ const Resume = () => {
             <Download className="w-5 h-5" />
             Download Resume (PDF)
           </Button>
-
-          <p className="text-sm text-muted-foreground mt-6">
-            To use this feature, place your resume PDF file in the <code className="px-2 py-1 bg-muted rounded">public</code> folder as <code className="px-2 py-1 bg-muted rounded">resume.pdf</code>
-          </p>
         </Card>
       </div>
     </section>
