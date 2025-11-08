@@ -5,7 +5,7 @@ import { Download, FileText } from "lucide-react";
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
+    link.href = `${import.meta.env.BASE_URL}resume.pdf`;
     link.download = 'resume.pdf';
     document.body.appendChild(link);
     link.click();
